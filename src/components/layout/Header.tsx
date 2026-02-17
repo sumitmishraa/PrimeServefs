@@ -66,7 +66,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center shrink-0">
                     <img
-                        src="/logo.png"
+                        src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/logo.png`}
                         alt="PrimeServe Facility Solutions"
                         className="h-10 w-auto object-contain"
                     />

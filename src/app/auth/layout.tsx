@@ -12,7 +12,7 @@ export default function AuthLayout({
                 <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
                     <Link href="/" className="flex items-center">
                         <img
-                            src="/logo.png"
+                            src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/logo.png`}
                             alt="PrimeServe Facility Solutions"
                             className="h-8 w-auto object-contain brightness-0 invert"
                         />

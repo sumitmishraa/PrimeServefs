@@ -49,7 +49,7 @@ export default function Footer() {
                 <div className="mb-10 pb-8 border-b border-gray-800">
                     <Link href="/" className="inline-block">
                         <img
-                            src="/logo.png"
+                            src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/logo.png`}
                             alt="PrimeServe Facility Solutions"
                             className="h-12 w-auto object-contain brightness-0 invert"
                         />
