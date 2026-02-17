@@ -92,6 +92,15 @@ const CATEGORY_DATA: Record<string, {
     },
 };
 
+export function generateStaticParams() {
+    return [
+        { slug: 'housekeeping-materials' },
+        { slug: 'cleaning-chemicals' },
+        { slug: 'office-stationery' },
+        { slug: 'pantry-items' },
+    ];
+}
+
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const data = CATEGORY_DATA[slug];
