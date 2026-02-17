@@ -1,0 +1,41 @@
+[
+  {
+    "id": "user-001",
+    "email": "demo@business.com",
+    "password": "Demo@123",
+    "name": "Demo User",
+    "company": "ABC Corporation",
+    "phone": "+91 9876543210",
+    "role": "admin",
+    "isPro": true,
+    "gstNumber": "22AAAAA0000A1Z5",
+    "businessType": "Manufacturing",
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "user-002",
+    "email": "john@company.com",
+    "password": "Test@123",
+    "name": "John Doe",
+    "company": "XYZ Ltd",
+    "phone": "+91 8765432109",
+    "role": "user",
+    "isPro": false,
+    "gstNumber": "",
+    "businessType": "Retail",
+    "createdAt": "2024-02-20T14:45:00Z"
+  },
+  {
+    "id": "user-003",
+    "email": "priya@facilities.com",
+    "password": "Priya@123",
+    "name": "Priya Sharma",
+    "company": "CleanCo Facilities",
+    "phone": "+91 7654321098",
+    "role": "user",
+    "isPro": false,
+    "gstNumber": "27BBBBB1111B2Y6",
+    "businessType": "Services",
+    "createdAt": "2024-03-10T09:15:00Z"
+  }
+]

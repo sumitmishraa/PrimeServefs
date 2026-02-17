@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ---- Custom design tokens ---- */
+
+:root {
+  --primary: #1E3A8A;
+  --primary-hover: #162e6e;
+  --secondary: #10B981;
+  --accent: #F59E0B;
+  --bg: #F9FAFB;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+  --success: #22C55E;
+  --warning: #FDE047;
+  --error: #EF4444;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* ---- Base resets ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+/* ---- Focus visible for accessibility ---- */
+
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Smooth transitions ---- */
+
+a,
+button,
+input,
+select,
+textarea {
+  transition: all 0.2s ease;
+}
+
+/* ---- Scrollbar ---- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ---- Animate-in classes (used by Header dropdown) ---- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInFromTop {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.fade-in {
+  animation-name: fadeIn;
+}
+.slide-in-from-top-2 {
+  animation-name: slideInFromTop;
+}
